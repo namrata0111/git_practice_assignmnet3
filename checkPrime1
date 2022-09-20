@@ -1,19 +1,23 @@
 
+
 function checkPrime(num){
-let c=0;
+let count=0;
 for(let i=0;i<=num;i++){
   if(num%i==0){
-     c++;
+     count++;
 }
 }
-if(c==2){
+if(count==2){
+
    return true;
 }
 return false;
 }
+
  let answer= checkprime(13);
 if(answer==true){
-console.log("true");
+console.log("Prime");
 }else{
-console.log("false");
+console.log("Not prime");
+
 }
